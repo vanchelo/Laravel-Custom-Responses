@@ -1,6 +1,5 @@
 <?php namespace Vanchelo\CustomResponses;
 
-use Request;
 use Illuminate\Support\ServiceProvider;
 use Symfony\Component\HttpKernel\Exception\HttpExceptionInterface;
 
