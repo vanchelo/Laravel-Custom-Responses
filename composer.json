@@ -1,0 +1,22 @@
+{
+  "name": "vanchelo/laravel-custom-responses",
+  "type": "library",
+  "description": "Laravel Custom Responses",
+  "keywords": ["laravel","response"],
+  "homepage": "https://github.com/vanchelo/Laravel-Custom-Responses",
+  "license": "GPLv2",
+  "authors": [
+    {
+      "name": "Brezhnev Ivan"
+    }
+  ],
+  "require": {
+    "php": ">=5.4.0",
+    "laravel/framework": "4.2.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Vanchelo\\CustomResponses\\": "src/"
+    }
+  }
+}
