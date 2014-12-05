@@ -38,7 +38,7 @@ class PageController extends Controller
 
 Для примера создадим ответ на 401 (Unauthorized) статусный код.
 
-1. Создаем класс Unauthorized и помещаем в любую удобную папку доступную автозагрузчику, в примере это папка `app/Acme/Responses/`:
+1. Создаем класс **Unauthorized** и помещаем в любую удобную папку доступную автозагрузчику, в примере это папка `app/Acme/Responses/`:
 ```php
 <?php namespace Acme\Responses;
 
@@ -50,14 +50,14 @@ class Unauthorized extends Response
     protected $defaultCode = 401;
 }
 ```
-где - $view - это адрес нашего Blade шаблона, $defaultCode - код ответа, можно не устанавливать, тогда будет взят код из исключения 
+где - **$view** - это адрес нашего Blade шаблона, **$defaultCode** - код ответа, можно не устанавливать, тогда будет взят код из исключения 
 
+- Создаем Blade шаблон `401.blade.php` в папке `app/views/responses`
 
-2. Создаем Blade шаблон `401.blade.php` в папке `app/views/responses`
-
-3. И добавляем код представленный ниж в `app/start/gobal.php`:
+- И добавляем код представленный ниже в `app/start/global.php` или куда вам удобнее:
 ```php
 App::bind('401', 'Acme\Responses\Unauthorized'); 
 ```
+P.S. Я выношу подобный код в сервис провайдеры
 
-4. Всё. Можно пользоваться
+- Всё. Можно пользоваться
