@@ -4,7 +4,7 @@
   "description": "Laravel Custom Responses",
   "keywords": ["laravel","response"],
   "homepage": "https://github.com/vanchelo/Laravel-Custom-Responses",
-  "license": "GPLv2",
+  "license": "MIT",
   "authors": [
     {
       "name": "Brezhnev Ivan"
